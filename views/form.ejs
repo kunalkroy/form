@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            
+           
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/show">Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
+
+
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container my-5">
+        <form class="row g-3 " action="/reg" method="POST">
+            <div class="row g-3">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First name" aria-label="First name"
+                        name="fstnm">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Middle name" aria-label="Middle name" name="mnm">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" name="lstnm">
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Address</label><br>
+                <textarea id="w3review" name="adrs" rows="3" cols="50">
+                </textarea>
+            </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">Country</label>
+                <select id="Country" class="form-select" name="country">
+                </select>
+            </div>
+             <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="States" class="form-select" name="state">
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip" name="zip">
+            </div>
+
+            <div class="col-md-1">
+                <label for="inputCode" class="form-label">code</label>
+                <input type="text" class="form-control" id="dailcode" name="dcd">
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">PhoneNumber</label>
+                <input type="number" class="form-control" id="inputEmail4" name="phn" min="1000000000" max="9999999999">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" name="eml">
+            </div>
+            <div class="col-md-4">
+                <label for="inputEmail4" class="form-label">Height</label>
+                <input type="number" class="form-control" id="inputEmail4" placeholder="ft.in" name="hgt" min="3.5" max="7.5">
+            </div>
+            <div class="col-md-4">
+                <label for="inputEmail4" class="form-label">Weight</label>
+                <input type="number" class="form-control" id="inputEmail4" placeholder="kg" name="wgt" min="30" max="300">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" name="pass">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">ConfirmPassword</label>
+                <input type="password" class="form-control" id="inputPassword4" name="cpass">
+            </div>
+
+          
+           
+
+            
+
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="/js/selection.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
